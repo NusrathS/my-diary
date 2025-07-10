@@ -10,6 +10,26 @@ function unlockDiary() {
   }
 }
 
+function createPetal() {
+  const petal = document.createElement("div");
+  petal.classList.add("petal");
+  petal.textContent = "🌸";
+  petal.style.left = Math.random() * 100 + "vw";
+  petal.style.fontSize = Math.random() * 24 + 10 + "px";
+  document.body.appendChild(petal);
+
+  setTimeout(() => {
+    petal.remove();
+  }, 10000);
+}
+
+// Add to unlockDiary()
+for (let i = 0; i < 30; i++) {
+  setTimeout(createPetal, i * 500); // 🌸 slowly appears
+}
+
+
+
 function unlockDiary() {
   const input = document.getElementById("password").value;
   if (input === PASSWORD) {
