@@ -16,15 +16,19 @@ body {
   justify-content: center;
   align-items: center;
   position: relative;
+  filter: blur(4px); /* ✨ soft blur */
 }
 
-
+/* To un-blur the overlay (input and name box) */
 .overlay {
   background-color: rgba(255, 255, 255, 0.8);
   padding: 30px;
   border-radius: 12px;
   box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  filter: blur(0px); /* keep content sharp */
+  position: absolute;
 }
+
 
 .diary-name {
   font-size: 2rem;
