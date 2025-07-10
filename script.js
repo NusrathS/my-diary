@@ -1,4 +1,4 @@
-const PASSWORD = "mysecreat"; // Change this to your secret key
+const PASSWORD = "mysecret"; // Change this to your secret key
 
 function unlockDiary() {
   const input = document.getElementById("password").value;
