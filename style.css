@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Georgia', cursive;
+  text-align: center;
+  color: #3c2a21;
+  background-color: #fff;
+}
+
+#lock-screen {
+  background-image: url('cover.png');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.overlay {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+.diary-name {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+input[type="password"] {
+  padding: 10px;
+  font-size: 1rem;
+  border: 2px solid #a47551;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+button {
+  margin-top: 15px;
+  padding: 10px 25px;
+  background-color: #f7c59f;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #e6ac72;
+}
+
+#diary-app {
+  padding: 20px;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+textarea {
+  width: 90%;
+  height: 300px;
+  padding: 15px;
+  font-size: 1rem;
+  border: 2px solid #dba5a4;
+  border-radius: 10px;
+  background-color: #fffdf6;
+}
+
+input[type="date"] {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: 2px solid #a47551;
+  margin-bottom: 10px;
+}
+
+#status-msg {
+  margin-top: 10px;
+  font-style: italic;
+  color: green;
+}

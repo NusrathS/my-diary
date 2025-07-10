@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nusrath's Diary</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="lock-screen">
+    <div class="overlay">
+      <h2 class="diary-name">Nusrath</h2>
+      <input type="password" id="password" placeholder="Enter password">
+      <button onclick="unlockDiary()">Unlock</button>
+    </div>
+  </div>
+
+  <div id="diary-app" style="display:none;">
+    <header>
+      <h1>🌸 Dear Diary 🌸</h1>
+      <input type="date" id="entry-date">
+    </header>
+
+    <textarea id="diary-text" placeholder="Write your thoughts here..."></textarea>
+    <button onclick="saveEntry()">💾 Save Entry</button>
+    <p id="status-msg"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
