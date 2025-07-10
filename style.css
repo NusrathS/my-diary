@@ -29,6 +29,22 @@ body {
   position: absolute;
 }
 
+.petal {
+  position: fixed;
+  top: -50px;
+  z-index: 999;
+  animation: fall 10s linear infinite;
+  pointer-events: none;
+  opacity: 0.8;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(100vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
 
 .diary-name {
   font-size: 2rem;
