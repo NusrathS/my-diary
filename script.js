@@ -10,6 +10,21 @@ function unlockDiary() {
   }
 }
 
+function unlockDiary() {
+  const input = document.getElementById("password").value;
+  if (input === PASSWORD) {
+    document.getElementById("lock-screen").style.display = "none";
+    document.getElementById("diary-app").style.display = "block";
+
+    const music = document.getElementById("bg-music");
+    music.volume = 0.3; // soft volume
+    music.play(); // 🎵 starts
+  } else {
+    alert("Wrong password! 🧚‍♀️ Try again.");
+  }
+}
+
+
 function saveEntry() {
   const date = document.getElementById("entry-date").value;
   const text = document.getElementById("diary-text").value;
